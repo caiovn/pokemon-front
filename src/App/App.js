@@ -1,27 +1,17 @@
 import React from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
-import Home from '../pages/Home';
-import NoMatch from '../pages/NoMatch';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import { Routes, Paths } from '../utils/routes';
+import { GlobalStyle } from './styles';
+import Navbar from '../components/Navbar/index';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="*">
-            <NoMatch />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar Paths={Paths} />
+      <Routes />
+    </Router>
   );
 }
 
