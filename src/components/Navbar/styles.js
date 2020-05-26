@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-export const NavbarStyle = styled.div`
+const NavbarStyle = styled.div`
   background-color: #1b1919;
   padding: 10px 0 10px 0;
-  position: fixed;
   width: 100%;
 
   a {
@@ -13,7 +12,9 @@ export const NavbarStyle = styled.div`
       margin: 0 1px 0 1px;
     }
 
-  a:hover { 
+  a:hover {
       background-color: #3833a5;
   }
 `;
+
+export default NavbarStyle;
