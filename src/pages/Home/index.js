@@ -1,7 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Home = () => (
-  <span>Home!</span>
-);
+import api from '../../utils/api';
+
+import Container from './styles';
+import Card from '../../components/Card/index';
+
+const Home = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    api.get('api/v1/pokemons')
+      .then((res) => {
+        setData(res.data);
+      });
+  }, []);
+
+  console.log(data);
+  return (
+    <Container>
+      {data.map((index) => (
+        <Card image={index.info.img} name={index.info.name} />
+      ))}
+    </Container>
+  );
+};
 
 export default Home;
