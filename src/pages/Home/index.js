@@ -15,7 +15,6 @@ const Home = () => {
       });
   }, []);
 
-  console.log(data);
   return (
     <Container>
       {data.map((index) => (

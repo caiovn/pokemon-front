@@ -1,14 +1,19 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Container, Title, Image } from './styles';
+import errorImg from '../../images/errorMissingno.webp';
 
-const NoMatch = () => {
-  const location = useLocation();
-  return (
-    <span>
-      no match for
-      {location.pathname}
-    </span>
-  );
-};
+const NoMatch = () => (
+  <Container>
+    <Title>
+      ERROR 404
+    </Title>
+
+    <Image src={errorImg} alt="Missingno" />
+
+    <Title>
+      PAGE NOT FOUND :(
+    </Title>
+  </Container>
+);
 
 export default NoMatch;
