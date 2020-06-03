@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-  margin: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   width: 200px;
   padding-left: 2px;
 `;

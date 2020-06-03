@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const NavbarStyle = styled.div`
   background-color: #1b1919;
   padding: 10px 0 10px 0;
-  width: 100%;
+  width: 0 auto;
 
   a {
       padding: 10px;
