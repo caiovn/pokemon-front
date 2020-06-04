@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Title, Image } from './styles';
+
 import errorImg from '../../images/errorMissingno.webp';
 
 const NoMatch = () => (

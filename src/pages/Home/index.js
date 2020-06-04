@@ -18,7 +18,12 @@ const Home = () => {
   return (
     <Container>
       {data.map((index) => (
-        <Card image={index.info.img} name={index.info.name} number={index.info.num} />
+        <Card
+          key={index.info.num}
+          image={index.info.img}
+          name={index.info.name}
+          number={index.info.num}
+        />
       ))}
     </Container>
   );

@@ -3,11 +3,15 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '../pages/Home';
 import NoMatch from '../pages/NoMatch';
+import Random from '../pages/Random';
 
 export const Routes = () => (
   <Switch>
     <Route exact path="/">
       <Home />
+    </Route>
+    <Route path="/random">
+      <Random />
     </Route>
     <Route path="*">
       <NoMatch />
@@ -18,7 +22,7 @@ export const Routes = () => (
 export const Paths = [
   {
     link: '/',
-    title: 'Home',
+    title: 'Pokémons',
   },
   {
     link: '/random',

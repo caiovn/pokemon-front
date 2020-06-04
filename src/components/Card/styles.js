@@ -6,10 +6,10 @@ export const Content = styled.div`
   margin-bottom: 15px;
   width: 200px;
   padding-left: 2px;
+  cursor: pointer;
 `;
 
 export const Img = styled.img`
-  cursor: pointer;
   width: 196px;
   height: 196px;
 `;
