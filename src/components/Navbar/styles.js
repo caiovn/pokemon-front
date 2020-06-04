@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavbarStyle = styled.div`
-  background-color: #1b1919;
+  background-color: #2b2d42;
   padding: 10px 0 10px 0;
   width: 0 auto;
 
@@ -10,10 +10,11 @@ const NavbarStyle = styled.div`
       color: white;
       text-decoration: none;
       margin: 0 1px 0 1px;
+      background-color: #2b2d42;
     }
 
   a:hover {
-      background-color: #3833a5;
+      background-color: #212333;
   }
 `;
 

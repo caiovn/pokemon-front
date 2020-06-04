@@ -9,7 +9,7 @@ const Random = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    api.get('api/v1/pokemon/id/001')
+    api.get('api/v1/pokemon/random')
       .then((res) => {
         setData(res.data);
       });

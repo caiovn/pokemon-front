@@ -2,34 +2,37 @@ import React from 'react';
 import PropType from 'prop-types';
 
 import {
-  Image, Title, Container, Number, Text,
+  Image, Title, Container, Number, Text, GridContainer, Paragraph,
 } from './style';
 
 const PokemonContainer = (pokemon) => (
   pokemon.pokemon.map((index) => (
-    <Container key={index.info.name}>
-      <Image src={index.info.img} />
-      <Title>
-        {index.info.name}
-        <span>
-          {`#${index.info.num}`}
-        </span>
-      </Title>
-
+    <GridContainer key={index.info.name}>
       <Container>
-        <Text>Type:&nbsp;</Text>
-        {
-            index.info.type.map((type) => (
-              <Text key={type}>
-                {type}
-                &nbsp;
-              </Text>
-            ))
-          }
+        <Image src={index.info.img} />
       </Container>
 
       <Container>
-        {
+        <Title>
+          {index.info.name}
+          <span>
+            {`#${index.info.num}`}
+          </span>
+        </Title>
+
+        <Paragraph>
+          {
+            index.info.type.map((type, indice) => (
+              <Text key={type}>
+                {!indice ? `${'Type: '}` : ', '}
+                {type}
+              </Text>
+            ))
+          }
+        </Paragraph>
+
+        <Paragraph>
+          {
             index.info.prev_evolution
             && index.info.prev_evolution.map((pEvolution, indice) => (
               <Text key={pEvolution}>
@@ -39,10 +42,10 @@ const PokemonContainer = (pokemon) => (
               </Text>
             ))
           }
-      </Container>
+        </Paragraph>
 
-      <Container>
-        {
+        <Paragraph>
+          {
             index.info.next_evolution
             && index.info.next_evolution.map((nEvolution, indice) => (
               <Text key={nEvolution}>
@@ -51,9 +54,10 @@ const PokemonContainer = (pokemon) => (
                 <Number>{`#${nEvolution.num}`}</Number>
               </Text>
             ))
-        }
+          }
+        </Paragraph>
       </Container>
-    </Container>
+    </GridContainer>
   ))
 );
 

@@ -5,13 +5,12 @@ export const Content = styled.div`
   margin: 0 auto;
   margin-bottom: 15px;
   width: 200px;
-  padding-left: 2px;
   cursor: pointer;
 `;
 
 export const Img = styled.img`
-  width: 196px;
-  height: 196px;
+  width: 200px;
+  background-color: #F2F2F2;
 `;
 
 export const Container = styled.div`
@@ -25,7 +24,7 @@ export const Title = styled.a`
 
 export const Number = styled.span`
   margin: 6px;
-  color: gray;
+  color: #423e3e;
   font-size:16px;
 `;
 
