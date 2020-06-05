@@ -1,24 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import {
   Content, Img, Container, Title, Number, HoverCard,
 } from './styles';
 
 const Card = (props) => {
-  const { image, name, number } = props;
+  const {
+    image, name, number,
+  } = props;
 
   return (
     <Content>
       <HoverCard>
-        <Img src={image} alt={name} />
-        <Container>
-          <Title>{name}</Title>
-          <Number>
-            #
-            {number}
-          </Number>
-        </Container>
+        <Link to={`/pokemon/${number}`}>
+          <Img src={image} alt={name} />
+          <Container>
+            <Title>{name}</Title>
+            <Number>
+              #
+              {number}
+            </Number>
+          </Container>
+        </Link>
       </HoverCard>
     </Content>
   );

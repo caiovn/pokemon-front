@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import NoMatch from '../pages/NoMatch';
 import Random from '../pages/Random';
+import Pokemon from '../pages/Pokemon';
 
 export const Routes = () => (
   <Switch>
@@ -13,8 +14,11 @@ export const Routes = () => (
     <Route path="/random">
       <Random />
     </Route>
+    <Route path="/pokemon/:number">
+      <Pokemon />
+    </Route>
     <Route path="*">
-      <NoMatch />
+      <NoMatch message="page" />
     </Route>
   </Switch>
 );

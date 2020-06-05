@@ -8,7 +8,11 @@ export const GridContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 88vh;
+  height: 85vh;
+
+  @media(max-width: 576px){
+    text-align: center;
+  }
 `;
 
 export const Image = styled.img`
@@ -30,6 +34,7 @@ export const Title = styled.h1`
 export const Number = styled.span`
   color: gray;
   font-size: 12px;
+  text-decoration: underline;
 `;
 
 export const Text = styled.span`

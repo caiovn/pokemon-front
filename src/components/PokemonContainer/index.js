@@ -1,13 +1,16 @@
 import React from 'react';
 import PropType from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import {
   Image, Title, Container, Number, Text, GridContainer, Paragraph,
 } from './style';
 
+
 const PokemonContainer = (pokemon) => (
   pokemon.pokemon.map((index) => (
-    <GridContainer key={index.info.name}>
+    <GridContainer key={index}>
       <Container>
         <Image src={index.info.img} />
       </Container>
@@ -38,7 +41,9 @@ const PokemonContainer = (pokemon) => (
               <Text key={pEvolution}>
                 {!indice ? `${'Previous evolution: '}` : ', '}
                 {pEvolution.name}
-                <Number>{`#${pEvolution.num}`}</Number>
+                <Link to={`/pokemon/${pEvolution.num}`}>
+                  <Number>{`#${pEvolution.num}`}</Number>
+                </Link>
               </Text>
             ))
           }
@@ -51,7 +56,9 @@ const PokemonContainer = (pokemon) => (
               <Text key={nEvolution}>
                 {!indice ? `${'Previous evolution: '}` : ', '}
                 {nEvolution.name}
-                <Number>{`#${nEvolution.num}`}</Number>
+                <Link to={`/pokemon/${nEvolution.num}`}>
+                  <Number>{`#${nEvolution.num}`}</Number>
+                </Link>
               </Text>
             ))
           }
