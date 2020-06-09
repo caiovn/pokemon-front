@@ -18,7 +18,7 @@ export const Routes = () => (
       <Pokemon />
     </Route>
     <Route path="*">
-      <NoMatch message="page" />
+      <NoMatch />
     </Route>
   </Switch>
 );

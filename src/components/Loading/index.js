@@ -1,24 +1,18 @@
 import React from 'react';
 
-import { StyledLoading } from './styles';
+import { StyledLoading, LoadingContainer } from './styles';
 
 const Loading = () => (
-  <StyledLoading>
-    <div className="lds-spinner">
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-    </div>
-  </StyledLoading>
+  <LoadingContainer>
+    <StyledLoading>
+      <div className="lds-ring">
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </StyledLoading>
+  </LoadingContainer>
 );
 
 export default Loading;
