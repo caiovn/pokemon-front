@@ -20,10 +20,12 @@ const Random = () => {
     api.get('api/v1/pokemon/random')
       .then((res) => {
         setData(res.data);
-        setIsLoading(false);
       })
       .catch((err) => {
         setError(err.response);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }, [changePokemon]);
 

@@ -18,10 +18,12 @@ const Home = () => {
     api.get('api/v1/pokemons')
       .then((res) => {
         setData(res.data);
-        setIsLoading(false);
       })
       .catch((err) => {
         setError(err);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }, []);
 

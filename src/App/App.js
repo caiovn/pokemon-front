@@ -5,14 +5,12 @@ import { Routes, Paths } from '../utils/routes';
 import GlobalStyle from './styles';
 import Navbar from '../components/Navbar/index';
 
-function App() {
-  return (
-    <Router>
-      <GlobalStyle />
-      <Navbar Paths={Paths} />
-      <Routes />
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <GlobalStyle />
+    <Navbar paths={Paths} />
+    <Routes />
+  </Router>
+);
 
 export default App;

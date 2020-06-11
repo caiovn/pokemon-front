@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import {
-  Content, Img, Container, Title, Number, HoverCard,
+  Content, Img, Container, Title, Number,
 } from './styles';
 
 const Card = (props) => {
@@ -14,18 +14,16 @@ const Card = (props) => {
 
   return (
     <Content>
-      <HoverCard>
-        <Link to={`/pokemon/${number}`}>
-          <Img src={image} alt={name} />
-          <Container>
-            <Title>{name}</Title>
-            <Number>
-              #
-              {number}
-            </Number>
-          </Container>
-        </Link>
-      </HoverCard>
+      <Link to={`/pokemon/${number}`}>
+        <Img src={image} alt={name} />
+        <Container>
+          <Title>{name}</Title>
+          <Number>
+            #
+            {number}
+          </Number>
+        </Container>
+      </Link>
     </Content>
   );
 };

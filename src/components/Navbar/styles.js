@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NavbarStyle = styled.div`
+export const NavbarStyle = styled.div`
   background-color: #2b2d42;
   padding: 10px 0 10px 0;
   width: 0 auto;
@@ -18,4 +18,4 @@ const NavbarStyle = styled.div`
   }
 `;
 
-export default NavbarStyle;
+export const OnlyToExcludeTheError = styled.div``;

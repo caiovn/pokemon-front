@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  margin: 0 auto;
+  margin: 15px;
   display: grid;
 
   @media (max-width: 576px) {

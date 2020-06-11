@@ -21,10 +21,12 @@ const Pokemon = () => {
     api.get(`api/v1/pokemon/id/${number}`)
       .then((res) => {
         setData(res.data);
-        setIsLoading(false);
       })
       .catch((err) => {
         setError(err.response);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }, [number]);
 

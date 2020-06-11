@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import NoMatch from '../pages/NoMatch';
 import Random from '../pages/Random';
 import Pokemon from '../pages/Pokemon';
+import Search from '../pages/Search';
 
 export const Routes = () => (
   <Switch>
@@ -17,6 +18,9 @@ export const Routes = () => (
     <Route path="/pokemon/:number">
       <Pokemon />
     </Route>
+    <Route path="/search">
+      <Search />
+    </Route>
     <Route path="*">
       <NoMatch />
     </Route>
@@ -27,6 +31,10 @@ export const Paths = [
   {
     link: '/',
     title: 'Pokémons',
+  },
+  {
+    link: '/search',
+    title: 'Search pokémon 🔍',
   },
   {
     link: '/random',
