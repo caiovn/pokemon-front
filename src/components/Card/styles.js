@@ -5,19 +5,13 @@ export const Content = styled.div`
   margin: 0 auto;
   margin-bottom: 15px;
   width: 200px;
-  height: 270px;
-  transition: 0.2s;
   cursor: pointer;
-
-  &:hover {
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
-  }
 `;
 
 export const Img = styled.img`
   width: 200px;
   height: 200px;
-  background-color: #F2F2F2;
+  background-color: #F0F0F0;
 `;
 
 export const Container = styled.div`
@@ -27,6 +21,7 @@ export const Container = styled.div`
 export const Title = styled.a`
   text-decoration: none;
   font-size: 20px;
+  color: #000000;
 `;
 
 export const Number = styled.span`

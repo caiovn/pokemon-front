@@ -14,12 +14,11 @@ export const Container = styled.div`
 export const StyledInput = styled.input`
   margin: 0 auto;
   height: 30px;
-  width: 500px;
+  width: 90%;
   font-size: 20px;
   font-family: "pokemon-font",monospace;
-  background-color: #e5e5e5;
   border: none;
-  padding: 7px 0;
+  padding: 7px 2px;
   border-bottom: #808080 solid 2px;
   transition: 0.5s;
   outline: 0;

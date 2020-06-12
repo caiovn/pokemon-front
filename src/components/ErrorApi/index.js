@@ -14,7 +14,7 @@ const ErrorApi = (props) => {
 
       <Image src={errorImg} alt="Missingno" />
 
-      <Title>{error.statusText.toUpperCase()}</Title>
+      <Title>{error.statusText}</Title>
     </Container>
   );
 };

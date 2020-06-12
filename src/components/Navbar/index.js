@@ -19,7 +19,6 @@ const Navbar = (props) => {
 
 Navbar.propType = {
   paths: PropType.array.isRequired,
-  onClick: PropType.func,
 };
 
 export default Navbar;

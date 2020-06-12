@@ -4,16 +4,29 @@ export const Container = styled.div`
   margin: 10px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+
+  @media(max-width: 576px){
+    margin: 0;
+  }
 `;
 
 export const RefreshBtn = styled.button`
-    background-color: #f7f7f7;
+   background-color: #FFFFFF;
     margin: 0 auto;
-    padding: 7px 110px;
-    border: 1px solid #2b2d42;
+    border: 1px solid #000000;
     border-radius: 4px;
-    font-family: "pokemon font", monospace;
-    font-size: 15px;
-`;
+    font-family: "pokemon font",monospace;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
 
-export const OnlyToExcludeError = styled.div``;
+    @media(max-width: 576px){
+      padding: 7px 0;
+      width: 98%;
+    }
+
+    @media(min-width: 576px){
+      padding: 7px 110px;
+    }
+`;

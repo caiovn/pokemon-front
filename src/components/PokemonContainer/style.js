@@ -8,7 +8,7 @@ export const GridContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 85vh;
+  height: 75vh;
 
   @media(max-width: 576px){
     text-align: center;
@@ -18,6 +18,7 @@ export const GridContainer = styled.div`
 export const Image = styled.img`
   margin: 0 auto;
   width: 250px;
+  height: 250px;
 `;
 
 export const Title = styled.h1`
@@ -27,12 +28,12 @@ export const Title = styled.h1`
 
   span {
     font-size: 16px;
-    color: #423e3e;
+    color: #616161;
   }
 `;
 
 export const Number = styled.span`
-  color: gray;
+  color: #616161;
   font-size: 12px;
   text-decoration: underline;
 `;

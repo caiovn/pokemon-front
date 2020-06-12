@@ -6,12 +6,11 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
       box-sizing: border-box;
       text-decoration: none;
-      color: black;
     }
 
     body {
         font-family: "pokemon-font", monospace;
-        background-color: #e5e5e5;
+        background-color: #FFFFFF;
     }
 `;
 

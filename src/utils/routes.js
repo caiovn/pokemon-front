@@ -34,7 +34,7 @@ export const Paths = [
   },
   {
     link: '/search',
-    title: 'Search pokémon 🔍',
+    title: 'Search pokémon',
   },
   {
     link: '/random',

@@ -1,20 +1,25 @@
 import styled from 'styled-components';
 
 export const NavbarStyle = styled.div`
-  background-color: #2b2d42;
+  background-color: #000000;
   padding: 10px 0 10px 0;
   width: 0 auto;
+  position: sticky;
+  top: 0;
 
   a {
-      padding: 10px;
-      color: white;
+      padding: 12px 10px 10px 10px;
+      color: #FFFFFF;
       text-decoration: none;
-      margin: 0 1px 0 1px;
-      background-color: #2b2d42;
+      margin-right: 1px;
     }
 
   a:hover {
-      background-color: #212333;
+      background-color: #262626;
+  }
+
+  @media (max-width: 577px) {
+    display: none;
   }
 `;
 
