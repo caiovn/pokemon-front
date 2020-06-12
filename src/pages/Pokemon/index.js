@@ -18,7 +18,7 @@ const Pokemon = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    api.get(`api/v1/pokemon/id/${number}`)
+    api.get(`/pokemon/number/${number}`)
       .then((res) => {
         setData(res.data);
       })

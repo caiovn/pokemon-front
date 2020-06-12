@@ -9,13 +9,25 @@ const ErrorApi = (props) => {
   const { error } = props;
 
   return (
-    <Container>
-      <Title>{`ERROR ${error.status}`}</Title>
+    <>
+      {error.status !== undefined ? (
+        <Container>
+          <Title>{`ERROR ${error.status}`}</Title>
 
-      <Image src={errorImg} alt="Missingno" />
+          <Image src={errorImg} alt="Missingno" />
 
-      <Title>{error.statusText}</Title>
-    </Container>
+          <Title>{error.statusText.toUpperCase()}</Title>
+        </Container>
+      ) : (
+        <Container>
+          <Title>AN ERROR HAS OCURRED</Title>
+
+          <Image src={errorImg} alt="Missingno" />
+
+          <Title>PLEASE, TRY AGAIN</Title>
+        </Container>
+      )}
+    </>
   );
 };
 

@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    api.get('api/v1/pokemons')
+    api.get('/pokemons')
       .then((res) => {
         setData(res.data);
       })

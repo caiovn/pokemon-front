@@ -17,12 +17,12 @@ const Random = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    api.get('api/v1/pokemon/random')
+    api.get('/pokemon/random')
       .then((res) => {
         setData(res.data);
       })
       .catch((err) => {
-        setError(err.response);
+        setError(err);
       })
       .finally(() => {
         setIsLoading(false);

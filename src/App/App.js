@@ -10,8 +10,8 @@ const App = () => (
   <Router>
     <GlobalStyle />
     <Navbar paths={Paths} />
-    <MobileNavbar />
     <Routes />
+    <MobileNavbar />
   </Router>
 );
 
