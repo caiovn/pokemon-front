@@ -42,13 +42,15 @@ const Search = () => {
 
   return (
     <Container>
-      <StyledInput type="text" onChange={handleChangeSearch} placeholder="Type a pokemon name" />
       {
           isLoading ? (<Loading />)
             : (
               error ? (<ErrorApi error={error} />)
                 : (
-                  <CardList data={searchList} />
+                  <>
+                    <StyledInput type="text" onChange={handleChangeSearch} placeholder="Type a pokemon name" />
+                    <CardList data={searchList} />
+                  </>
                 )
             )
         }
