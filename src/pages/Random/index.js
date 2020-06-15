@@ -38,19 +38,19 @@ const Random = () => {
   };
 
   return (
-    <>
+    <Container>
       {
         isLoading ? (<Loading />)
           : (
             error ? (<ErrorApi error={error} />)
               : (
-                <Container>
+                <>
                   <PokemonContainer pokemon={data} />
                   <RefreshBtn onClick={handleChangePokemon}>Randomize</RefreshBtn>
-                </Container>
+                </>
               ))
       }
-    </>
+    </Container>
   );
 };
 

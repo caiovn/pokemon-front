@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 10px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-
-  @media(max-width: 576px){
-    margin: 0;
-  }
 `;
 
 export const RefreshBtn = styled.button`

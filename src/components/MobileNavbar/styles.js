@@ -16,6 +16,7 @@ export const NavbarStyle = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 75px;
     }
 
   @media (min-width: 576px) {
